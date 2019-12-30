@@ -50,7 +50,7 @@ def IDEA_VERSIONS = [
     19: [
         ID: 'IC-193.5662.53',
         URL: 'https://download.jetbrains.com/idea/ideaIC-2019.3.1.tar.gz',
-        CSUM: 'b64767d87dbaae7e1511666fc032cf356e326770090e3a141969909d09670345',
+        CSUM: 'b67cc055d7ab18b2a864d05956407ae1f910eb295e2a73e6a6aa813260930509',
         JAVA: '1.8'
     ]
 ]
