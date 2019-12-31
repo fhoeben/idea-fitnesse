@@ -81,7 +81,9 @@ dependencies {
     compile configurations.bundle
     compile fileTree(dir: IDEA_LIB,
                      include: ['openapi.jar', 'idea.jar', 'util.jar', 'extensions.jar', 'annotations.jar',
-                               'jdom.jar', 'picocontainer.jar', 'trove4j.jar',])
+                               'jdom.jar', 'picocontainer.jar', 'trove4j.jar',
+                               'platform-api.jar', 'platform-impl.jar',]
+    )
 
     testCompile configurations.ideaSdk
     testCompile 'org.scalatest:scalatest_2.11:2.2.5'
