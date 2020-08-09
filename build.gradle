@@ -46,11 +46,17 @@ def IDEA_VERSIONS = [
         URL: 'https://download.jetbrains.com/idea/ideaIC-2016.1.4.tar.gz',
         CSUM: 'b64767d87dbaae7e1511666fc032cf356e326770090e3a141969909d09670345',
         JAVA: '1.8'
+    ],
+    20_2: [
+        ID: 'IC-202.6397.94',
+        URL: 'https://download.jetbrains.com/idea/ideaIC-2020.2.tar.gz',
+        CSUM: '1e2858a478b02087333fff65674a83046f0f353ab053d80e225190faa0f7d567',
+        JAVA: '1.8'
     ]
 ]
 
 def idea_version = System.getenv('IDEA_VERSION')
-def IDEA = IDEA_VERSIONS[idea_version ? idea_version.toInteger() : 15]
+def IDEA = IDEA_VERSIONS[idea_version ? idea_version.toInteger() : 20_2]
 
 def IDEA_SDK_NAME = "IntelliJ IDEA Community Edition ${IDEA.ID}"
 def IDEA_LIB = "lib/sdk/idea-${IDEA.ID}/lib"
