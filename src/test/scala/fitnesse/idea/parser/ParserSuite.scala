@@ -49,8 +49,8 @@ trait ParserSuite extends FunSuite with Matchers with BeforeAndAfterAll {
     super.beforeAll()
 
     Extensions.registerAreaClass("IDEA_PROJECT", null)
-    Extensions.registerAreaClass("IDEA_PROJECT", null)
-    Extensions.registerAreaClass(MultiHostInjector.MULTIHOST_INJECTOR_EP_NAME.getName, null)
+//    Extensions.registerAreaClass("IDEA_PROJECT", null)
+//    Extensions.registerAreaClass(MultiHostInjector.MULTIHOST_INJECTOR_EP_NAME.getName, null)
 
     app = new MockApplicationEx(myTestRootDisposable)
     myProject = new MockProjectEx(myTestRootDisposable)
